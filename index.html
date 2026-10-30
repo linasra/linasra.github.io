@@ -7,8 +7,10 @@
 <meta name="description" content="Solo indie game developer from Lithuania making mobile games rooted in Baltic folklore and history. Home of Pagan Survivor.">
 <meta property="og:title" content="Linas Ramanauskas – Indie Game Developer">
 <meta property="og:description" content="Mobile games rooted in Baltic folklore and history.">
-<meta property="og:image" content="https://linasra.github.io/profile.jpg">
+<meta property="og:image" content="https://linasra.github.io/pagan-survivor-icon.jpg">
 <meta name="theme-color" content="#12170f">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <style>
   :root { --bg: #f7f4ec; --text: #2a2418; --muted: #6b6250; --accent: #8a5a12; --card: #fffdf7; --line: #e3dcc8; --btn-text: #fffdf7; }
   @media (prefers-color-scheme: dark) {
@@ -28,7 +30,10 @@
   h2 { font-size: .85rem; letter-spacing: .12em; text-transform: uppercase; margin: 3rem 0 .75rem; color: var(--muted); }
   p { margin: .6rem 0; }
   .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 1.4rem 1.5rem; }
-  .card h3 { margin: .2rem 0 .3rem; font-size: 1.5rem; color: var(--accent); }
+  .game-head { display: flex; align-items: center; gap: 1rem; }
+  .game-head img { width: 88px; height: 88px; border-radius: 20px; flex: none; border: 1px solid var(--line); }
+  .btn.off { background: none; color: var(--muted); border: 1px dashed var(--line); }
+  .card h3 { margin: .3rem 0 0; font-size: 1.5rem; color: var(--accent); }
   .badge { display: inline-block; font-size: .78rem; padding: .1rem .7rem; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); }
   .facts { list-style: none; padding: 0; margin: 1rem 0 0; display: flex; flex-wrap: wrap; gap: .5rem; }
   .facts li { font-size: .88rem; color: var(--muted); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: .15rem .65rem; }
@@ -50,8 +55,7 @@
       <h1>Linas Ramanauskas</h1>
       <p class="tag">Indie game developer · Lithuania</p>
       <div class="cta">
-        <a class="btn" href="#games">See my games</a>
-        <a class="btn ghost" href="mailto:linas.ramanauskas.lt@gmail.com">Get in touch</a>
+        <a class="btn" href="mailto:linas.ramanauskas.lt@gmail.com">Get in touch</a>
       </div>
     </div>
   </header>
@@ -61,8 +65,13 @@
 
   <h2 id="games">Games</h2>
   <article class="card">
-    <span class="badge">In development · Android &amp; iOS</span>
-    <h3>Pagan Survivor</h3>
+    <div class="game-head">
+      <img src="pagan-survivor-icon.jpg" alt="Pagan Survivor app icon" width="88" height="88">
+      <div>
+        <span class="badge">In development · Android &amp; iOS</span>
+        <h3>Pagan Survivor</h3>
+      </div>
+    </div>
     <p>A roguelite survival game set in the pagan Baltic lands. Play a chosen champion of the old gods and hold out against hordes from Lithuanian folklore: <em>vilkatai</em>, <em>laumės</em>, restless <em>vėlės</em> and the servants of <em>Velnias</em>. Craft a new build every run, then earn lasting blessings from Perkūnas, Laima and Žemyna.</p>
     <ul class="facts">
       <li>Lithuanian mythology</li>
@@ -72,7 +81,10 @@
     </ul>
     <div class="links">
       <a href="pagan-survivor-policies/">Privacy policy</a>
-      <a href="https://github.com/linasra/pagan-survivor">Source on GitHub</a>
+    </div>
+    <div class="cta">
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.linasra.pagansurvivor">Google Play</a>
+      <span class="btn off" aria-disabled="true">App Store · soon</span>
     </div>
   </article>
 
